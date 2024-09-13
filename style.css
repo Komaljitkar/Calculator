@@ -1,0 +1,93 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(59, 70, 100, 1);
+    margin: 0;
+}
+
+.calculator {
+    width: 400px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+   color:white;
+   font-size: 16px;
+}
+.calculator p {
+    padding-left:20px;
+    font-size: 1.5rem;
+    margin:0px;
+    font-weight: bold;
+}
+.display {
+    /* width: 100%;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px; */
+
+    font-size: 3.5rem;
+    padding: 15px;
+    border: none;
+    background-color: rgba(24, 31, 50, 1);
+    color: white;
+    width:92%;
+    border-radius:12px;
+    text-align: right;
+    height:90px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color:#252D44;
+    padding: 20px 20px 10px 20px;
+    border-radius: 12px;
+}
+
+button {
+    width: 100%;
+    padding:15px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(59, 70, 100, 1);
+    background-color: rgba(234, 227, 219, 1);
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button:active {
+    background-color: #c0c0c0;
+}
+
+ /* button.xy {
+    grid-column: span 2; /* Make the '0' button twice as wide */
+ 
+button.reset{
+    grid-column: span 2;
+    color: white;
+    background: rgba(100, 114, 153, 1)
+}
+button.equal{
+    grid-column:span 2;
+    background-color: rgb(209, 48, 1);
+    color:white;
+}
+button.del{
+     background-color:rgba(100, 114, 153, 1) ;
+     color:white;
+}
