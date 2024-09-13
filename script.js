@@ -44,7 +44,7 @@ function appendOperator(operator) {
 // Delete the last character from the display
 function deleteChar() {
     display.value = display.value.slice(0, -1);
-    if (display.value === "") display.value = "0"; // Reset to default if display is empty
+    if (display.value === "") display.value = " "; // Reset to default if display is empty
 }
 
 
